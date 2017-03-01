@@ -13,6 +13,7 @@ require 'user_agent/browsers/libavformat'
 require 'user_agent/browsers/playstation'
 require 'user_agent/browsers/podcast_addict'
 require 'user_agent/browsers/vivaldi'
+require 'user_agent/browsers/ios_applications'
 
 class UserAgent
   module Browsers
@@ -37,6 +38,7 @@ class UserAgent
       WindowsMediaPlayer,
       AppleCoreMedia,
       Libavformat,
+      IosApplication,
     ].freeze
 
     def self.all
